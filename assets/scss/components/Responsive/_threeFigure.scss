@@ -1,0 +1,35 @@
+.three_Sec {
+    color: $darkTextColor;
+    background-color: white;
+
+    #three_Sec_back,
+    #three_Sec_obj {
+        display: none;
+    }
+
+    h2 {
+        font-weight: normal;
+        padding: 1rem 1rem 0;
+    }
+
+    .three_Sec_resp {
+        display: block;
+        background-color: $backgroundColor;
+        background-image: url(../images/01_samiPigura_background.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 52%;
+
+        img {
+            position: relative;
+            padding: 10rem 1rem 0;
+            left: 50%;
+            transform: translateX(-50%);
+            max-height: 30rem;
+        }
+    }
+
+    p {
+        margin: 1rem;
+    }
+}

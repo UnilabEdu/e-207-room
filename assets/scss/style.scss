@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "mainFont";
+    src: url(../fonts/HelveticaNeue-Thin-13.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nino_Mtavruli";
+    src: url(../fonts/bpg_nino_mtavruli_book.ttf) format("truetype");
+    font-display: swap;
+}
+
+@media only screen and (min-width:890px) {
+    @import './components/Desktop/variables';
+    @import './components/Desktop/reset';
+    @import './components/Desktop/header';
+    @import './components/Desktop/slider';
+    @import './components/Desktop/introduction';
+    @import './components/Desktop/threeFigure';
+    @import './components/Desktop/continue';
+    @import './components/Desktop/ecology';
+    @import './components/Desktop/littleCreatures';
+    @import './components/Desktop/stars';
+    @import './components/Desktop/love';
+    @import './components/Desktop/animations';
+}
+
+@media only screen and (max-width:890px) {
+    @import './components/responsive/variables';
+    @import './components/responsive/reset';
+    @import './components/responsive/header';
+    @import './components/responsive/slider';
+    @import './components/responsive/introduction';
+    @import './components/responsive/threeFigure';
+    @import './components/responsive/continue';
+    @import './components/responsive/ecology';
+    @import './components/responsive/littleCreatures';
+    @import './components/responsive/stars';
+    @import './components/responsive/love';
+    @import './components/responsive/animations';
+}

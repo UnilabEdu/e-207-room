@@ -1,0 +1,46 @@
+html {
+    overflow: scroll;
+}
+
+body {
+    background-color: white;
+    overflow: hidden;
+    height: fit-content;
+}
+
+* {
+    font-family: "mainFont";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    animation-name: slide_up;
+    animation-duration: 0.4s;
+    display: none;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section[class~=show] {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nino_Mtavruli", sans-serif;
+}

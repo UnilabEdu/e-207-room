@@ -1,0 +1,78 @@
+header {
+    position: relative;
+    background-color: $backgroundColor;
+    padding: 0.3rem 0;
+    height: 9.6rem;
+    z-index: 2;
+
+    #title {
+        padding: 1rem;
+        
+        .bars {
+            display: none;
+        }
+
+        h1 {
+            color: $darkTextColor;
+            font-weight: 600;
+        }
+
+        p {
+            color: $lightTextColor;
+            font-size: 1.8rem;
+            font-weight: 100;
+        }
+    }
+
+    nav {
+        background-color: white;
+        padding-left: 0.6rem;
+
+        #tabs {
+            display: flex;
+            padding: 0.2rem 0;
+
+            #closebtn {
+                display: none;
+            }
+
+            li {
+                display: block;
+                float: left;
+                text-align: center;
+                font-size: 1rem;
+                color: $lightTextColor;
+                border-right: 1px solid $lightTextColor;
+                padding: 0.3rem 0.5rem;
+                cursor: pointer;
+            }
+
+            li[class~=active] {
+                color: $activeColor;
+                opacity: 1;
+            }
+
+            li:last-child {
+                border: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    header {
+        #title {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        nav {
+            #tabs {
+                li {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

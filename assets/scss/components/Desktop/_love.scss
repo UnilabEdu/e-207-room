@@ -1,0 +1,31 @@
+.love_Sec {
+    background-image: url(../images/06_sikvaruli_background.svg);
+    background-position-x: -11.2rem;
+
+    #love_obj {
+        height: 22rem;
+        left: 25%;
+        bottom: 2rem;
+    }
+
+    #love_info {
+        position: absolute;
+        width: 33%;
+        top: 10%;
+        left: 50%;
+        background-color: $TextbackgroundColor;
+        color: $darkTextColor;
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

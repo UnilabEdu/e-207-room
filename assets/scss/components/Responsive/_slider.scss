@@ -1,0 +1,31 @@
+.slider_Sec {
+    position: relative;
+    background-color: $backgroundColor;
+
+    p {
+        color: $lightTextColor;
+        font-size: 1.5rem;
+        margin-left: 3rem;
+        position: fixed;
+    }
+
+    .mySlide {
+        position: relative;
+        height: calc(100vh - 4rem);
+        overflow: auto;
+
+        embed {
+            display: none;
+        }
+
+        img {
+            position: absolute;
+            height: 80%;
+            bottom: 0;
+        }
+    }
+
+    [class*="angle-"] {
+        display: none;
+    }
+}

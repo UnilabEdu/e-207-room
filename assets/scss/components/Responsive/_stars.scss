@@ -1,0 +1,41 @@
+.stars_Sec {
+    #stars_obj {
+        display: none;
+    }
+
+    #stars_info {
+        position: relative;
+        width: 100%;
+        background-color: $TextbackgroundColor;
+        color: $darkTextColor;
+
+        h2 {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 2rem;
+            padding: 1rem 1rem 0;
+        }
+
+        #stars_resp {
+            display: block;
+            position: relative;
+            background-color: $backgroundColor;
+            background-image: url(../images/05_varsklavebi_background.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 15%;
+
+            #stars_resp_obj {
+                position: relative;
+                padding: 0 2rem 7rem;
+                min-height: 20rem;
+                max-height: 30rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 1rem;
+        }
+    }
+}

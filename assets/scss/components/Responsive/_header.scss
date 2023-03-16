@@ -1,0 +1,109 @@
+header {
+    position: relative;
+    background-color: $backgroundColor;
+    padding: 0.3rem 0;
+    height: fit-content;
+    z-index: 2;
+
+    #title {
+        padding: 1rem 1rem 0 1rem;
+
+        .bars {
+            float: left;
+            padding-right: 0.8rem;
+            width: auto;
+            height: 1.5rem;
+            display: block;
+        }
+
+        h1 {
+            color: $darkTextColor;
+            font-weight: 600;
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+    nav {
+        background-color: white;
+        padding-left: 0.6rem;
+
+        #tabs {
+            display: grid;
+            position: fixed;
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            overflow-x: hidden;
+            transition: 0.3s;
+            z-index: 1;
+
+            #closebtn {
+                position: relative;
+                width: auto;
+
+                .xmark {
+                    position: relative;
+                    left: -1.5rem;
+                    width: auto;
+                    height: 2.2rem;
+                }
+            }
+
+            li {
+                position: relative;
+                display: flex;
+                align-items: center;
+                border: none;
+                text-align: left;
+                font-size: 1.2rem;
+                height: 100%;
+                margin-left: 2rem;
+                float: left;
+                color: $lightTextColor;
+                padding: 0.3rem 0.5rem;
+                cursor: pointer;
+            }
+
+            li[class~=active] {
+                color: $activeColor;
+                opacity: 1;
+            }
+
+            li:last-child {
+                border: none;
+            }
+
+            li::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                height: 1px;
+                width: 3rem;
+                background-color: $lightTextColor;
+            }
+        }
+
+        #tabs[class~=openedNav] {
+            width: 15rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    header {
+        height: 4rem;
+
+        #title {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

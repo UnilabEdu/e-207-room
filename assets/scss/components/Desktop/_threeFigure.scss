@@ -1,0 +1,43 @@
+.three_Sec {
+    #three_Sec_back {
+        position: relative;
+        object-fit: cover;
+        object-position: 42% 0;
+        transform: translateX(-42%);
+        height: 100%;
+    }
+
+    #three_Sec_obj {
+        height: 20rem;
+        left: 11%;
+        bottom: 2rem;
+    }
+
+    #three_figure_info {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        min-height: fit-content;
+        max-height: 90%;
+        background-color: $TextbackgroundColor;
+        color: $darkTextColor;
+        padding: 1rem;
+        margin: 1rem;
+        overflow: scroll;
+
+        .three_Sec_resp {
+            display: none;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
