@@ -1,0 +1,38 @@
+.little_Sec {
+    #little_image {
+        #little_back {
+            position: absolute;
+            object-fit: cover;
+            object-position: 30% 0;
+            transform: translateX(-30%);
+            height: 100%;
+        }
+
+        #little_obj {
+            height: 15rem;
+            left: 5%;
+            bottom: 2rem;
+        }
+    }
+
+    #little_info {
+        position: absolute;
+        bottom: 5%;
+        right: 10%;
+        width: 45%;
+        background-color: $TextbackgroundColor;
+        color: $darkTextColor;
+        padding: 1rem;
+        z-index: 1;
+
+        h2 {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
