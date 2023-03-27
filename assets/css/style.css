@@ -33,7 +33,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 9.6rem);
-    overflow: hidden;
   }
   section img {
     position: absolute;
@@ -454,6 +453,21 @@ h6 {
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
+  }
+}
+@media only screen and (min-width: 890px) {
+  .about_Sec {
+    background-color: white;
+    color: rgba(51, 51, 51, 0.8235294118);
+    padding: 5% 5% 0 5%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow: scroll;
+  }
+  .about_Sec p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 890px) {
@@ -958,5 +972,20 @@ h6 {
       -webkit-transform: translateY(0);
               transform: translateY(0);
     }
+  }
+}
+@media only screen and (max-width: 890px) {
+  .about_Sec {
+    background-color: white;
+    color: rgba(51, 51, 51, 0.8235294118);
+    padding: 5% 5% 0 5%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow: scroll;
+  }
+  .about_Sec p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
 }

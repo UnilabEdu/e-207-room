@@ -23,6 +23,7 @@
     @import './components/Desktop/stars';
     @import './components/Desktop/love';
     @import './components/Desktop/animations';
+    @import './components/Desktop/about';
 }
 
 @media only screen and (max-width:890px) {
@@ -38,4 +39,5 @@
     @import './components/responsive/stars';
     @import './components/responsive/love';
     @import './components/responsive/animations';
+    @import './components/responsive/about';
 }

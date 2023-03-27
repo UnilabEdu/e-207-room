@@ -1,0 +1,12 @@
+.about_Sec {
+    background-color: white;
+    color: $darkTextColor;
+    padding: 5% 5% 0 5%;
+    height: fit-content;
+    overflow: scroll;
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+}
