@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: $backgroundColor;
 }
 
@@ -8,10 +8,10 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
 
-*::-webkit-scrollbar {
-    display: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 section {
@@ -22,14 +22,15 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 9.6rem);
-    
+    overflow-y: hidden;
+
     img {
         position: absolute;
     }
-}
 
-section[class~=show] {
-    display: block;
+    &[class~=show] {
+        display: block;
+    }
 }
 
 .hide {

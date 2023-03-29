@@ -4,6 +4,8 @@ const respSlide = document.querySelector(".mySlide"); //responsive slide
 let slideRightEdge = false;
 const arrowLeft = document.querySelector("#arrow-left");
 const arrowRight = document.querySelector("#arrow-right");
+const photos = document.querySelector("#photos");
+const shownslide = document.querySelector("#shownslide");
 
 //tabs names for navigation
 const tabsContent = [
@@ -132,3 +134,29 @@ respSlide.addEventListener("scroll", () => {
         slideRightEdge = false;
     }
 }, { passive: true });
+
+//turn on slide show
+photos.childNodes.forEach(img => {
+    if (img.tagName == 'IMG') {
+        img.addEventListener('click', (e) => {
+            shownslide.src = e.target.src;
+            document.querySelector(".galery_Sec").setAttribute("id", "slideshow");
+        })
+    }
+});
+
+//to change photo in gallery slide, d-direction (-1,1)
+function nextPhoto(d) {
+    for (let i = 0; i < photos.children.length; i++) {
+        if (photos.children[i].src == shownslide.src) {
+            if (i + d < 0) {
+                shownslide.src = photos.children[photos.children.length - 1].src;
+            } else if (i + d == photos.children.length) {
+                shownslide.src = photos.children[0].src;
+            } else {
+                shownslide.src = photos.children[i + d].src;
+            }
+            break;
+        }
+    }
+}

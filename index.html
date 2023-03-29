@@ -11,7 +11,7 @@
     <meta property="og:description" content="მეცნიერების, ადამიანის და მისი უსაზღვრო შესაძლებლობების შესახებ" />
     <meta name="description" content="მეცნიერების, ადამიანის და მისი უსაზღვრო შესაძლებლობების შესახებ">
     <link rel="stylesheet" href="./assets/css/style.min.css">
-    <script src="./assets/js/index.min.js" defer></script>
+    <script src="./assets/js/index.js" defer></script>
     <title>ალეგორიული პანო</title>
 </head>
 
@@ -287,8 +287,39 @@
         </section>
 
         <section class="galery_Sec">
-            ტექსტი და ფოტოები
+            <div id="shownslideContainer">
+                <svg class="angle-left" onclick="nextPhoto(-1)" xmlns="http://www.w3.org/2000/svg" fill="#707070"
+                    viewBox="0 0 320 512">
+                    <path
+                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                </svg>
+
+                <img src="" alt="slide" id="shownslide">
+
+                <svg class="angle-right" onclick="nextPhoto(1)" xmlns="http://www.w3.org/2000/svg" fill="#707070"
+                    viewBox="0 0 320 512">
+                    <path
+                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                </svg>
+            </div>
+            <div id="photos">
+                <img src="./assets/images/roomPhotos/ZUR_2441.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2450.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2455.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2460.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2468.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2474.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2482.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2486.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2489.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2493.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2505.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2513.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2518.JPG" alt="image" loading="lazy">
+                <img src="./assets/images/roomPhotos/ZUR_2522.JPG" alt="image" loading="lazy">
+            </div>
         </section>
+
         <section class="about_Sec">
             <p>ჰორიზონტი ევროპა ევროკავშირის კვლევებისა და ინოვაციების დაფინანსების მთავარი პროგრამაა, რომლის ბიუჯეტია
                 95.5 მილიარდი ევრო. გლობალურ გამოწვევათა დაძლევის პარალელურად პროგრამა ხელს უწყობს კვლევებისა და
@@ -316,12 +347,19 @@
                 განმსაზღვრელ ინოვაციებში და მცირე და საშუალო საწარმოების განვითარებას European Innovation Council (EIC)
                 პროგრამის მეშვეობით. ასევე European Innovation Ecosystems (EIE) დახმარებით ხელს უწყობს ევროპის
                 ინოვაციების არეალის განვითარებას. The European Institute of Innovation and Technology (EIT) კი თავის
-                მხრივ მხარს უჭერს ბიზნესის, კვლევების, უმაღლესი განათლებისა და მეწარმეობის ინტეგრაციას.</p>
-            <p>Widening
-                Participation and Strengthening the European Research Area, ჰორიზონტი ევროპის პროგრამის დაფინანსების
-                კიდევ ერთი ნაწილი, ხელს უწყობს კვლევებისა და ინოვაციების შესაძლებლობათა გაზრდას ერთიან ევროპულ კვლევით
-                სივრცესთან თანხვედრაში იმ ქვეყნებისთვის, რომელთაც პროგრამაში მონაწილეობის დაბალი მაჩვენებელი აქვთ.
-                პროექტზე მუშაობდნენ: აქ ჩამოსაწერია ვინ მუშაობდა პროექტზე</p>
+                მხრივ მხარს უჭერს ბიზნესის, კვლევების, უმაღლესი განათლებისა და მეწარმეობის ინტეგრაციას.
+            </p>
+            <p>Widening Participation and Strengthening the European Research Area, ჰორიზონტი ევროპის პროგრამის
+                დაფინანსების კიდევ ერთი ნაწილი, ხელს უწყობს კვლევებისა და ინოვაციების შესაძლებლობათა გაზრდას ერთიან
+                ევროპულ კვლევით სივრცესთან თანხვედრაში იმ ქვეყნებისთვის, რომელთაც პროგრამაში მონაწილეობის დაბალი
+                მაჩვენებელი აქვთ.
+            </p>
+            <p>
+                <strong>პროექტზე მუშაობდნენ:</strong>
+            </p>
+            <p>
+                აქ ჩამოსაწერია ვინ მუშაობდა პროექტზე
+            </p>
         </section>
     </main>
 </body>
