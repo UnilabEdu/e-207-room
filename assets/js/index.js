@@ -17,7 +17,7 @@ const tabsContent = [
     { tabName: 'პატარა არსებები', sectionName: 'little' },
     { tabName: 'ვარსკვლავები', sectionName: 'stars' },
     { tabName: 'სიყვარული', sectionName: 'love' },
-    { tabName: 'გალარეა', sectionName: 'galery' },
+    { tabName: 'გალერეა', sectionName: 'galery' },
     { tabName: 'პროექტის შესახებ', sectionName: 'about' }
 ];
 

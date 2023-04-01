@@ -5,6 +5,11 @@
     height: fit-content;
     overflow: scroll;
 
+    h2{
+        color: $darkTextColor;
+        margin-bottom: 1rem;
+    }
+
     p {
         font-size: 1.2rem;
         margin-bottom: 2rem;

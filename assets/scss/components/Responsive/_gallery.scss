@@ -1,0 +1,25 @@
+.galery_Sec {
+    padding: 2rem 2%;
+
+    #shownslideContainer {
+        display: none;
+    }
+
+    h2 {
+        color: $darkTextColor;
+        margin-bottom: 2rem;
+    }
+
+    #photos {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 2rem;
+        width: 100%;
+
+        img {
+            position: relative;
+            width: 15rem;
+        }
+    }
+}

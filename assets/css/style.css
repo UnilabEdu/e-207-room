@@ -20,9 +20,6 @@
     margin: 0;
     padding: 0;
   }
-  *::-webkit-scrollbar {
-    display: none;
-  }
   section {
     -webkit-animation-name: slide_up;
             animation-name: slide_up;
@@ -33,13 +30,25 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 9.6rem);
-    overflow-y: hidden;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   section img {
     position: absolute;
   }
   section[class~=show] {
     display: block;
+  }
+  section::-webkit-scrollbar {
+    display: none;
+  }
+  section * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  section *::-webkit-scrollbar {
+    display: none;
   }
   .hide {
     display: none;
@@ -464,6 +473,9 @@ h6 {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .galery_Sec h2 {
+    display: none;
+  }
   .galery_Sec #shownslideContainer {
     display: none;
   }
@@ -527,6 +539,7 @@ h6 {
   }
   #slideshow #photos img {
     position: relative;
+    width: 15rem;
   }
 }
 @media only screen and (min-width: 890px) {
@@ -534,7 +547,12 @@ h6 {
     background-color: white;
     color: rgba(51, 51, 51, 0.8235294118);
     padding: 5% 5% 0 5%;
-    overflow: scroll;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .about_Sec h2 {
+    display: none;
   }
   .about_Sec p {
     font-size: 1.2rem;
@@ -1046,6 +1064,34 @@ h6 {
   }
 }
 @media only screen and (max-width: 890px) {
+  .galery_Sec {
+    padding: 2rem 2%;
+  }
+  .galery_Sec #shownslideContainer {
+    display: none;
+  }
+  .galery_Sec h2 {
+    color: rgba(51, 51, 51, 0.8235294118);
+    margin-bottom: 2rem;
+  }
+  .galery_Sec #photos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+  }
+  .galery_Sec #photos img {
+    position: relative;
+    width: 15rem;
+  }
+}
+@media only screen and (max-width: 890px) {
   .about_Sec {
     background-color: white;
     color: rgba(51, 51, 51, 0.8235294118);
@@ -1054,6 +1100,10 @@ h6 {
     height: -moz-fit-content;
     height: fit-content;
     overflow: scroll;
+  }
+  .about_Sec h2 {
+    color: rgba(51, 51, 51, 0.8235294118);
+    margin-bottom: 1rem;
   }
   .about_Sec p {
     font-size: 1.2rem;

@@ -8,10 +8,6 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
 }
 
 section {
@@ -22,7 +18,9 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 9.6rem);
-    overflow-y: hidden;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
     img {
         position: absolute;
@@ -30,6 +28,19 @@ section {
 
     &[class~=show] {
         display: block;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    * {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 }
 

@@ -2,7 +2,11 @@
     padding: 5rem 0;
     background-color: white;
     height: fit-content;
-    
+
+    h2 {
+        display: none;
+    }
+
     #shownslideContainer {
         display: none;
     }
@@ -32,7 +36,6 @@
         img {
             margin: auto;
             position: relative;
-            // width: 100%;
             width: auto;
             height: 80vh;
             left: 50%;
@@ -64,6 +67,7 @@
 
         img {
             position: relative;
+            width: 15rem;
         }
     }
 }
